@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+#musicvideosdiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  /* background-color: blueviolet; */
+}
+
+#outerscroller {
+  width: 100vw;
+  overflow: hidden;
+  /* background-color: greenyellow; */
+  padding: 100px 0;
+  position: relative;
+}
+.exit {
+  height: 100%;
+  width: 50px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  margin: auto 0;
+  z-index: 3;
+}
+.exit div {
+  width: 50%;
+  height: 100%;
+  display: inline-block;
+}
+.exit div:first-child {
+  background-color: white;
+}
+
+.exit div:last-child {
+  background-color: #d4b15d;
+}
+
+.entrance {
+  height: 100%;
+  width: 50px;
+  position: absolute;
+  right: 300px;
+  bottom: 0;
+  top: 0;
+  margin: auto 0;
+  z-index: 3;
+}
+.entrance div {
+  width: 50%;
+  height: 100%;
+  display: inline-block;
+}
+.entrance div:last-child {
+  background-color: white;
+}
+
+.entrance div:first-child {
+  background-color: #d4b15d;
+}
+
+#innerscroller {
+  width: calc(400px * 14);
+  white-space: nowrap;
+  /* background-color: aqua; */
+  animation-name: videoscroll;
+  animation-duration: 25s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+#innerscroller:hover {
+  animation-play-state: paused;
+}
+
+.videodiv {
+  position: relative;
+  /* background-color: rgb(255, 94, 0); */
+  display: inline-block;
+  width: 400px;
+  height: 250px;
+  margin: 0 5px;
+}
+
+.videothumbnail {
+  position: absolute;
+  width: 400px;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  transition: 0.5s;
+  z-index: 2;
+}
+.videoinfocard {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 380px;
+  height: 200px;
+  transition: 0.5s;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  background-color: #282828;
+  color: white;
+  font-family: "Inter", sans-serif;
+  font-weight: 800;
+}
+
+.videoinfocard a {
+  text-decoration: none;
+  border-style: none;
+  border-radius: 0.5rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 800;
+  font-size: 1.2rem;
+  color: white;
+  background-color: #a48946;
+  margin: 1rem 0;
+  padding: 0.5rem 1rem;
+}
+
+.videoinfocard a:hover {
+  background-color: #d3bb83;
+}
+
+.videodiv:hover .videothumbnail {
+  transform: translateY(-100px);
+}
+
+.videodiv:hover .videoinfocard {
+  transform: translateY(100px);
+}
+
+@keyframes videoscroll {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(-2870px);
+  }
+}
