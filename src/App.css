@@ -11,13 +11,13 @@
 }
 
 #contentcontainer {
-  margin-left: 300px;
+  width: 100%;
 }
 
 #navdiv {
-  position: fixed;
+  /* position: sticky; */
   background-color: #282828;
-  width: 300px;
+  max-width: 300px;
   min-width: 300px;
   height: 100vh;
   display: flex;

@@ -5,18 +5,21 @@
   flex-direction: column;
   justify-content: center;
   height: 100vh;
+  width: 100%;
   /* background-color: blueviolet; */
 }
 
 #outerscroller {
-  width: 100vw;
-  overflow: hidden;
+  width: 100%;
+  height: 400px;
+  overflow: visible;
+  white-space: nowrap;
   /* background-color: greenyellow; */
   padding: 100px 0;
   position: relative;
 }
 .exit {
-  height: 100%;
+  height: 98%;
   width: 50px;
   position: absolute;
   left: 0;
@@ -39,10 +42,10 @@
 }
 
 .entrance {
-  height: 100%;
+  height: 98%;
   width: 50px;
   position: absolute;
-  right: 300px;
+  right: 0px;
   bottom: 0;
   top: 0;
   margin: auto 0;
@@ -62,9 +65,19 @@
 }
 
 #innerscroller {
-  width: calc(400px * 14);
-  white-space: nowrap;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  margin: auto 0;
   /* background-color: aqua; */
+
+  height: 250px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
   animation-name: videoscroll;
   animation-duration: 25s;
   animation-timing-function: linear;
@@ -142,9 +155,9 @@
 
 @keyframes videoscroll {
   0% {
-    transform: translateX(0px);
+    transform: translateX(0%);
   }
   100% {
-    transform: translateX(-2870px);
+    transform: translateX(-50%);
   }
 }

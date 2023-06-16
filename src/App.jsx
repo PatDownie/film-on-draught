@@ -11,8 +11,7 @@ function App() {
           <img src={logo} alt="VERY COOL FILM ON DRAUGHT LOGO" id="mainlogo" />
           <ul>
             <li>HOME</li>
-            <li>MUSIC VIDEOS</li>
-            <li>SHORT FILMS</li>
+            <li>OUR WORK</li>
             <li>PHOTOGRAPHY</li>
             <li>PRINTS</li>
             <li>MYSTERY SECTION</li>
