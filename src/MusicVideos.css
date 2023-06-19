@@ -84,6 +84,7 @@
   animation-iteration-count: infinite;
 }
 
+#innerscroller.paused,
 #innerscroller:hover {
   animation-play-state: paused;
 }
@@ -128,7 +129,7 @@
   font-weight: 800;
 }
 
-.videoinfocard a {
+.videoinfocard .watchbutton {
   text-decoration: none;
   border-style: none;
   border-radius: 0.5rem;
@@ -141,8 +142,9 @@
   padding: 0.5rem 1rem;
 }
 
-.videoinfocard a:hover {
+.videoinfocard .watchbutton:hover {
   background-color: #d3bb83;
+  cursor: pointer;
 }
 
 .videodiv:hover .videothumbnail {
