@@ -4,14 +4,14 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 100vh;
+  /* height: 500px; */
   width: 100%;
   /* background-color: blueviolet; */
 }
 
 #outerscroller {
   width: 100%;
-  height: 400px;
+  height: 280px;
   overflow: visible;
   white-space: nowrap;
   /* background-color: greenyellow; */
@@ -19,7 +19,7 @@
   position: relative;
 }
 .exit {
-  height: 98%;
+  height: 100%;
   width: 50px;
   position: absolute;
   left: 0;
@@ -42,7 +42,7 @@
 }
 
 .entrance {
-  height: 98%;
+  height: 100%;
   width: 50px;
   position: absolute;
   right: 0px;
@@ -106,7 +106,7 @@
   top: 0;
   bottom: 0;
   margin: auto;
-  transition: 0.5s;
+  transition: 0.6s;
   z-index: 2;
 }
 .videoinfocard {
@@ -118,7 +118,7 @@
   margin: auto;
   width: 380px;
   height: 200px;
-  transition: 0.5s;
+  transition: 0.6s;
   display: flex;
   flex-direction: column;
   justify-content: end;
@@ -148,11 +148,11 @@
 }
 
 .videodiv:hover .videothumbnail {
-  transform: translateY(-100px);
+  transform: translateY(-20px);
 }
 
 .videodiv:hover .videoinfocard {
-  transform: translateY(100px);
+  transform: translateY(180px);
 }
 
 @keyframes videoscroll {

@@ -3,7 +3,10 @@ import "./reset.css";
 import logo from "./images/logo-png.png";
 import MusicVideos from "./components/MusicVideos.jsx";
 import VideoModal from "./components/VideoModal";
+import Home from "./components/Home";
+import OurWork from "./components/OurWork";
 import { useState } from "react";
+import { BrowserRouter, Routes, Route, NavLink } from "react-router-dom";
 
 function App() {
   const [modalVisibility, setModalVisibility] = useState(false);
@@ -24,24 +27,27 @@ function App() {
   }
 
   return (
-    <div className="App">
-      <div id="sitecontainer">
-        <div id="navdiv">
-          <img src={logo} alt="VERY COOL FILM ON DRAUGHT LOGO" id="mainlogo" />
-          <ul>
-            <li>HOME</li>
-            <li>OUR WORK</li>
-            <li>PHOTOGRAPHY</li>
-            <li>PRINTS</li>
-            <li>MYSTERY SECTION</li>
-          </ul>
+    <BrowserRouter>
+      <div className="App">
+        <div id="sitecontainer">
+          <div id="navdiv">
+            <img src={logo} alt="VERY COOL FILM ON DRAUGHT LOGO" id="mainlogo" />
+            <ul>
+              <li>HOME</li>
+              <li>OUR WORK</li>
+              <li>CONTACT US</li>
+            </ul>
+          </div>
+          <div id="contentcontainer">
+            <Routes>
+              <Route path="/" element={<Home videoScrollState={videoScrollState} modalToggle={modalToggle} changeModalContent={changeModalContent} />} />
+              <Route path="/penis" element={<OurWork />} />
+            </Routes>
+          </div>
         </div>
-        <div id="contentcontainer">
-          <MusicVideos videoScrollState={videoScrollState} modalToggle={modalToggle} changeModalContent={changeModalContent} />
-        </div>
+        {modalVisibility && <VideoModal modalContent={modalContent} modalToggle={modalToggle} />}
       </div>
-      {modalVisibility && <VideoModal modalContent={modalContent} modalToggle={modalToggle} />}
-    </div>
+    </BrowserRouter>
   );
 }
 

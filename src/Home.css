@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+#homediv {
+}
+
+#contentdiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#homeTextDiv {
+  max-width: 480px;
+  padding-left: 1rem;
+  color: #282828;
+  /* background-color: antiquewhite; */
+  font-family: "Inter", sans-serif;
+  font-weight: 800;
+  font-size: 9rem;
+}
+
+#vidoeArrow {
+  object-fit: scale-down;
+  max-width: 300px;
+}
+
+#homeVideo {
+  width: 530px;
+  height: 300px;
+  padding-right: 1rem;
+}
