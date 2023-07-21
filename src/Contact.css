@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+#contactdivcontainer {
+  /* background-color: lawngreen; */
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}
+
+#contactdiv {
+  position: relative;
+  /* background-color: aqua; */
+  height: 100%;
+  min-width: 900px;
+}
+
+#contactdiv #avatar {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+#contactdiv #speechbubblediv {
+  /* background-color: crimson; */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 650px;
+  height: 489px;
+}
+
+#contactdiv #bubble {
+  object-fit: contain;
+  width: 100%;
+  /* opacity: 0.5; */
+}
+
+#contactdiv #speechbubblediv p {
+  position: absolute;
+  top: 70px;
+  left: 70px;
+  width: 450px;
+  height: 300px;
+  /* background-color: aqua; */
+
+  font-family: "inter", sans-serif;
+  font-weight: 500;
+  font-size: 1.8rem;
+  line-height: 1.1em;
+}

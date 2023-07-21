@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+#ourworkdiv {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#ourworkdiv .videocard {
+  background-color: #282828;
+  color: white;
+  font-family: "inter", sans-serif;
+
+  padding: 1rem;
+  margin: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+#ourworkdiv .videocard h2 {
+  font-size: 2rem;
+  font-weight: 700;
+
+  margin: 0.5rem 0 0.5rem 0;
+}

@@ -11,11 +11,14 @@
 }
 
 #contentcontainer {
+  margin-left: 300px;
   width: 100%;
+  /* display: flex;
+  justify-content: center; */
 }
 
 #navdiv {
-  /* position: sticky; */
+  position: fixed;
   background-color: #282828;
   max-width: 300px;
   min-width: 300px;
@@ -52,6 +55,24 @@
   transform: translate(10px);
 }
 
+#navdiv ul li a {
+  text-decoration: none;
+}
+
+.NavLink:link {
+  text-decoration: none;
+  color: white;
+}
+
+.NavLink:visited {
+  text-decoration: none;
+  color: white;
+}
+
+#navdiv ul li .active {
+  color: #d4b15d;
+}
+
 .modal {
   position: fixed;
   left: 0;
@@ -66,11 +87,19 @@
   align-items: center;
 }
 
+.modal:hover {
+  cursor: pointer;
+}
+
 .modalframe {
   background-color: white;
   border-style: dashed;
   border-width: 10px;
   border-color: #d4b15d;
+}
+
+.modalframe:hover {
+  cursor: default;
 }
 
 .modalheader {
