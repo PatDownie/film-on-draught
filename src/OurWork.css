@@ -1,24 +1,142 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 #ourworkdiv {
+  /* background-color: brown; */
+  position: relative;
+  padding-top: 3rem;
+}
+
+#ourworkdiv .videodiv {
+  position: relative;
+  height: 350px;
+  width: 606px;
+  margin: 0rem auto 3rem auto;
+  /* background-color: blue; */
+}
+
+#ourworkdiv .videoThumbnailDiv {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+  transition: 0.8s;
+}
+
+#ourworkdiv .videodiv:hover .videoThumbnailDiv {
+  transform: translateX(-190px);
+}
+
+#ourworkdiv .videoThumbnailDiv img {
+  height: 100%;
+
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  /* opacity: 0.5; */
+}
+
+#ourworkdiv .videoTitleDiv {
+  position: absolute;
+  background-color: #282828bd;
+  width: 100%;
+  height: 100%;
+
+  opacity: 0;
+
+  transition: 1.2s;
+}
+
+#ourworkdiv .videoThumbnailDiv .videoTitle {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 100%;
+  text-align: center;
+
+  font-family: "inter", sans-serif;
+  color: white;
+  font-size: 7rem;
+  font-weight: 800;
+
+  transition: 1.5s;
+
+  /* background-color: blueviolet; */
+}
+
+#ourworkdiv .videoThumbnailDiv .videoTitle:hover {
+  cursor: default;
+}
+
+#ourworkdiv .videodiv:hover .videoTitleDiv {
+  opacity: 1;
+}
+
+#ourworkdiv .videoInfoDiv {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+  transition: 1.3s;
+}
+
+#ourworkdiv .videodiv:hover .videoInfoDiv {
+  transform: translateX(300px);
+}
+
+#ourworkdiv .videoInfoDiv img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  height: 100%;
+}
+
+#ourworkdiv .videoInfoDiv .videoInfo {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  color: white;
+}
+
+#ourworkdiv .videoInfoDiv .watchbutton {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, -3rem);
+
+  text-decoration: none;
+  border-style: none;
+  border-radius: 0.5rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 800;
+  font-size: 1.2rem;
+  color: white;
+  background-color: #a48946;
+  padding: 0.5rem 1rem;
+}
+
+#ourworkdiv .videoInfoDiv .watchbutton:hover {
+  background-color: #d3bb83;
+  cursor: pointer;
+}
+
+#ourworkdiv #squiggleDiv {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  padding-right: 300px;
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
 }
 
-#ourworkdiv .videocard {
-  background-color: #282828;
-  color: white;
-  font-family: "inter", sans-serif;
-
-  padding: 1rem;
-  margin: 0.5rem;
-  border-radius: 0.5rem;
-}
-
-#ourworkdiv .videocard h2 {
-  font-size: 2rem;
-  font-weight: 700;
-
-  margin: 0.5rem 0 0.5rem 0;
+#ourworkdiv #squiggleDiv img {
+  transform: translate(0, -3rem);
+  height: 100%;
 }

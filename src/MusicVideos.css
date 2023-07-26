@@ -9,7 +9,7 @@
   /* background-color: blueviolet; */
 }
 
-#outerscroller {
+#musicvideosdiv #outerscroller {
   width: 100%;
   height: 280px;
   overflow: visible;
@@ -18,7 +18,7 @@
   padding: 100px 0;
   position: relative;
 }
-.exit {
+#musicvideosdiv .exit {
   height: 100%;
   width: 50px;
   position: absolute;
@@ -28,20 +28,20 @@
   margin: auto 0;
   z-index: 3;
 }
-.exit div {
+#musicvideosdiv .exit div {
   width: 50%;
   height: 100%;
   display: inline-block;
 }
-.exit div:first-child {
+#musicvideosdiv .exit div:first-child {
   background-color: white;
 }
 
-.exit div:last-child {
+#musicvideosdiv .exit div:last-child {
   background-color: #d4b15d;
 }
 
-.entrance {
+#musicvideosdiv .entrance {
   height: 100%;
   width: 50px;
   position: absolute;
@@ -51,20 +51,20 @@
   margin: auto 0;
   z-index: 3;
 }
-.entrance div {
+#musicvideosdiv .entrance div {
   width: 50%;
   height: 100%;
   display: inline-block;
 }
-.entrance div:last-child {
+#musicvideosdiv .entrance div:last-child {
   background-color: white;
 }
 
-.entrance div:first-child {
+#musicvideosdiv .entrance div:first-child {
   background-color: #d4b15d;
 }
 
-#innerscroller {
+#musicvideosdiv #innerscroller {
   position: absolute;
   left: 0;
   bottom: 0;
@@ -84,21 +84,21 @@
   animation-iteration-count: infinite;
 }
 
-#innerscroller.paused,
-#innerscroller:hover {
+#musicvideosdiv #innerscroller.paused,
+#musicvideosdiv #innerscroller:hover {
   animation-play-state: paused;
 }
 
-.videodiv {
+/* .videodiv {
   position: relative;
-  /* background-color: rgb(255, 94, 0); */
+  background-color: rgb(255, 94, 0);
   display: inline-block;
   width: 400px;
   height: 250px;
   margin: 0 5px;
-}
+} */
 
-.videothumbnail {
+#musicvideosdiv .videothumbnail {
   position: absolute;
   width: 400px;
   left: 0;
@@ -109,7 +109,7 @@
   transition: 0.6s;
   z-index: 2;
 }
-.videoinfocard {
+#musicvideosdiv .videoinfocard {
   position: absolute;
   left: 0;
   right: 0;
@@ -129,7 +129,7 @@
   font-weight: 800;
 }
 
-.videoinfocard .watchbutton {
+#musicvideosdiv .videoinfocard .watchbutton {
   text-decoration: none;
   border-style: none;
   border-radius: 0.5rem;
@@ -142,16 +142,16 @@
   padding: 0.5rem 1rem;
 }
 
-.videoinfocard .watchbutton:hover {
+#musicvideosdiv .videoinfocard .watchbutton:hover {
   background-color: #d3bb83;
   cursor: pointer;
 }
 
-.videodiv:hover .videothumbnail {
+#musicvideosdiv .videodiv:hover .videothumbnail {
   transform: translateY(-20px);
 }
 
-.videodiv:hover .videoinfocard {
+#musicvideosdiv .videodiv:hover .videoinfocard {
   transform: translateY(180px);
 }
 

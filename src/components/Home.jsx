@@ -5,7 +5,7 @@ import "../Home.css";
 function Home({ modalToggle, changeModalContent, videoScrollState, videoArray }) {
   return (
     <div id="homediv">
-      <MusicVideos videoScrollState={videoScrollState} modalToggle={modalToggle} changeModalContent={changeModalContent} videoArray={videoArray} />
+      {/* <MusicVideos videoScrollState={videoScrollState} modalToggle={modalToggle} changeModalContent={changeModalContent} videoArray={videoArray} /> */}
       <div id="contentdiv">
         <div id="homeTextDiv">
           <p>we make cool vidoes</p>

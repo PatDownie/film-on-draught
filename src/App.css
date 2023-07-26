@@ -13,8 +13,7 @@
 #contentcontainer {
   margin-left: 300px;
   width: 100%;
-  /* display: flex;
-  justify-content: center; */
+  /* background-color: deeppink; */
 }
 
 #navdiv {
@@ -35,7 +34,7 @@
 }
 
 #navdiv ul {
-  padding-bottom: 10rem;
+  padding-bottom: 1rem;
   color: white;
   font-family: "Inter", sans-serif;
   font-weight: 800;

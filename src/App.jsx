@@ -127,7 +127,7 @@ function App() {
           <div id="contentcontainer">
             <Routes>
               <Route path="/" element={<Home videoScrollState={videoScrollState} modalToggle={modalToggle} changeModalContent={changeModalContent} videoArray={videoArray} />} />
-              <Route path="/work" element={<OurWork videoArray={videoArray} />} />
+              <Route path="/work" element={<OurWork modalToggle={modalToggle} changeModalContent={changeModalContent} videoArray={videoArray} />} />
               <Route path="/contact" element={<Contact />} />
             </Routes>
           </div>
