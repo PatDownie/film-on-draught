@@ -1,8 +1,25 @@
 import chrisAvatar from "../images/chris-avatar.png";
 import bubble from "../images/contactbubble1.gif";
+import sadimg from "../images/chris-avatar-sad.png";
+import puzzledimg from "../images/chris-avatar-puzzled.png";
+import neutralimg from "../images/chris-avatar-neutral.png";
 import "../Contact.css";
+import { useState } from "react";
 
 function Contact() {
+  const emotionArray = [
+    { emotion: "Happy", image: chrisAvatar },
+    { emotion: "Sad", image: sadimg },
+    { emotion: "Puzzled", image: puzzledimg },
+    { emotion: "Neutral", image: neutralimg },
+  ];
+
+  const [emotionImg, setEmotionImg] = useState(emotionArray[0].image);
+
+  function emotionChange(emotionSelection) {
+    setEmotionImg(emotionSelection);
+  }
+
   return (
     <div id="contactdivcontainer">
       <div id="contactdiv">
@@ -18,8 +35,40 @@ function Contact() {
             SMOKE SIGNAL: ENSURE STRONG NORTHWESTERLY PREVAILING WIND
           </p>
         </div>
-        <img src={chrisAvatar} alt="avatar" id="avatar" />
+        <img src={emotionImg} alt="avatar" id="avatar" />
       </div>
+      <p
+        className="emotionButton"
+        onClick={() => {
+          emotionChange(emotionArray[0].image);
+        }}
+      >
+        Happy
+      </p>
+      <p
+        className="emotionButton"
+        onClick={() => {
+          emotionChange(emotionArray[1].image);
+        }}
+      >
+        Sad
+      </p>
+      <p
+        className="emotionButton"
+        onClick={() => {
+          emotionChange(emotionArray[2].image);
+        }}
+      >
+        Puzzled
+      </p>
+      <p
+        className="emotionButton"
+        onClick={() => {
+          emotionChange(emotionArray[3].image);
+        }}
+      >
+        Neutral
+      </p>
     </div>
   );
 }
