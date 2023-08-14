@@ -140,3 +140,161 @@
   transform: translate(0, -3rem);
   height: 100%;
 }
+
+@media (max-width: 750px) {
+  #ourworkdiv {
+    margin-top: 1rem;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  #ourworkdiv .videodiv {
+    position: initial;
+    height: auto;
+    width: 100%;
+    margin: 0 0 0 0;
+    /* background-color: blue; */
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+
+  #ourworkdiv .videoThumbnailDiv {
+    position: relative;
+    width: 100%;
+    height: auto;
+
+    transition: 0.8s;
+
+    /* background-color: cadetblue; */
+  }
+
+  #ourworkdiv .videodiv:hover .videoThumbnailDiv {
+    transform: translateX(-190px);
+  }
+
+  #ourworkdiv .videoThumbnailDiv img {
+    height: auto;
+    width: 100%;
+
+    position: relative;
+    left: auto;
+    top: auto;
+    transform: translate(0, 0);
+
+    /* opacity: 0.5; */
+  }
+
+  #ourworkdiv .videoTitleDiv {
+    position: absolute;
+    background-color: rgba(0, 0, 255, 0);
+    width: 100%;
+    height: 100%;
+    top: 0;
+
+    opacity: 1;
+
+    transition: 1.2s;
+  }
+
+  #ourworkdiv .videoThumbnailDiv .videoTitle {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 100%;
+    text-align: center;
+
+    font-family: "inter", sans-serif;
+    color: #d8b65f;
+    font-size: 5rem;
+    font-weight: 800;
+
+    transition: 1.5s;
+
+    /* background-color: blueviolet; */
+  }
+
+  #ourworkdiv .videoThumbnailDiv .videoTitle:hover {
+    cursor: default;
+  }
+
+  #ourworkdiv .videodiv:hover .videoTitleDiv {
+    opacity: 1;
+  }
+
+  #ourworkdiv .videoInfoDiv {
+    position: relative;
+    width: 100%;
+    height: auto;
+
+    transform: translateY(-40px);
+
+    /* background-color: coral; */
+
+    transition: 1.3s;
+  }
+
+  #ourworkdiv .videodiv:hover .videoInfoDiv {
+    transform: translateX(300px);
+  }
+
+  #ourworkdiv .videoInfoDiv img {
+    position: relative;
+    left: auto;
+    top: auto;
+    transform: translate(0, 0);
+
+    height: auto;
+    width: 100%;
+
+    /* opacity: 0.5; */
+  }
+
+  #ourworkdiv .videoInfoDiv .videoInfo {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    color: white;
+  }
+
+  #ourworkdiv .videoInfoDiv .watchbutton {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, -3rem);
+
+    text-decoration: none;
+    border-style: none;
+    border-radius: 0.5rem;
+    font-family: "Inter", sans-serif;
+    font-weight: 800;
+    font-size: 1.2rem;
+    color: white;
+    background-color: #a48946;
+    padding: 0.5rem 1rem;
+  }
+
+  #ourworkdiv .videoInfoDiv .watchbutton:hover {
+    background-color: #d3bb83;
+    cursor: pointer;
+  }
+
+  #ourworkdiv #squiggleDiv {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    padding-right: 300px;
+    display: flex;
+    justify-content: center;
+  }
+
+  #ourworkdiv #squiggleDiv img {
+    transform: translate(0, -3rem);
+    height: 100%;
+    display: none;
+  }
+}
