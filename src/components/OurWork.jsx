@@ -14,7 +14,7 @@ function OurWork({ modalToggle, changeModalContent, videoArray }) {
             <img src={infocard} alt="infocard" />
             <p className="videoInfo">{video.info}</p>
             <p
-              className="watchbutton"
+              className="watchbuttonembed"
               onClick={() => {
                 modalToggle();
                 changeModalContent(video.embedLink);
@@ -22,6 +22,9 @@ function OurWork({ modalToggle, changeModalContent, videoArray }) {
             >
               watch
             </p>
+            <a className="watchbuttonlink" href={video.link}>
+              watch
+            </a>
           </div>
           <div className="videoThumbnailDiv">
             <img src={video.thumbnail} alt="video thumbnail" />
