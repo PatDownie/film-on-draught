@@ -1,7 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 /* -------------------------------------------------------------------- */
-/* desktop */
+/* -------------------------------------------------------------------- */
+/* -------------------------------------------------------------------- */
+/* ------------------------------desktop------------------------------- */
+/* -------------------------------------------------------------------- */
+/* -------------------------------------------------------------------- */
 /* -------------------------------------------------------------------- */
 
 @media (min-width: 751px) {
@@ -43,33 +47,6 @@
   }
 
   #ourworkdiv .videoTitleDiv {
-    position: absolute;
-    background-color: #282828bd;
-    width: 100%;
-    height: 100%;
-
-    opacity: 0;
-
-    transition: 1.2s;
-  }
-
-  #ourworkdiv .videoThumbnailDiv .videoTitle {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-
-    width: 100%;
-    text-align: center;
-
-    font-family: "inter", sans-serif;
-    color: #d8b65f;
-    font-size: 7rem;
-    font-weight: 800;
-
-    transition: 1.5s;
-
-    /* background-color: blueviolet; */
   }
 
   #ourworkdiv .videoThumbnailDiv .videoTitle:hover {
@@ -85,7 +62,23 @@
     width: 100%;
     height: 100%;
 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 2rem 0;
+
     transition: 1.3s;
+  }
+
+  #ourworkdiv .videoTitle {
+    font-family: "inter", sans-serif;
+    color: #d8b65f;
+    font-size: 2rem;
+    font-weight: 800;
+    text-align: center;
+    max-width: 50%;
   }
 
   #ourworkdiv .videodiv:hover .videoInfoDiv {
@@ -99,23 +92,15 @@
     transform: translate(-50%, -50%);
 
     height: 100%;
+    z-index: -1;
   }
 
   #ourworkdiv .videoInfoDiv .videoInfo {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-
     color: white;
+    max-width: 50%;
   }
 
   #ourworkdiv .videoInfoDiv .watchbuttonembed {
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    transform: translate(-50%, -3rem);
-
     text-decoration: none;
     border-style: none;
     border-radius: 0.5rem;
@@ -152,7 +137,11 @@
 }
 
 /* -------------------------------------------------------------------- */
-/* mobile */
+/* -------------------------------------------------------------------- */
+/* -------------------------------------------------------------------- */
+/* -------------------------------mobile------------------------------- */
+/* -------------------------------------------------------------------- */
+/* -------------------------------------------------------------------- */
 /* -------------------------------------------------------------------- */
 
 @media (max-width: 750px) {
@@ -172,7 +161,7 @@
     display: flex;
     flex-direction: column-reverse;
 
-    margin-bottom: -30px;
+    margin-bottom: 10px;
 
     width: 95%;
   }
@@ -199,10 +188,10 @@
   }
 
   #ourworkdiv .videoThumbnailDiv .videoTitle {
-    position: absolute;
-    /* left: 50%;
+    /* position: absolute;
+    left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%); */
+    transform: translate(-50%, -50%);
     bottom: 0;
     transform: translate(0, 40%);
 
@@ -212,33 +201,48 @@
     color: #d8b65f;
     font-size: 5rem;
     font-weight: 800;
-    text-align: center;
+    text-align: center; */
   }
 
   #ourworkdiv .videoInfoDiv {
     position: relative;
     width: 100%;
-    transform: translate(0, -40px);
+    /* transform: translate(0, -40px); */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 2rem 0;
+  }
+
+  #ourworkdiv .videoTitle {
+    font-family: "inter", sans-serif;
+    color: #d8b65f;
+    font-size: 2rem;
+    font-weight: 800;
+    text-align: center;
+    max-width: 70%;
   }
 
   #ourworkdiv .videoInfoDiv img {
     width: 100%;
-  }
-  #ourworkdiv .videoInfoDiv .videoInfo {
+
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
 
+    z-index: -1;
+  }
+
+  #ourworkdiv .videoInfoDiv .videoInfo {
     color: white;
+    max-width: 50%;
   }
 
   #ourworkdiv .videoInfoDiv .watchbuttonlink {
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    transform: translate(-50%, -3rem);
-
     text-decoration: none;
     border-style: none;
     border-radius: 0.5rem;

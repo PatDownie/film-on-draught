@@ -8,13 +8,19 @@ import Contact from "./components/Contact";
 import { useState } from "react";
 import { BrowserRouter, Routes, Route, NavLink } from "react-router-dom";
 
-import thumb1 from "./images/thumb1.png";
-import thumb2 from "./images/thumb2.png";
-import thumb3 from "./images/thumb3.png";
-import thumb4 from "./images/thumb4.png";
-import thumb5 from "./images/thumb5.png";
-import thumb6 from "./images/thumb6.png";
-import thumb7 from "./images/thumb7.png";
+// import thumb1 from "./images/thumb1.png";
+// import thumb2 from "./images/thumb2.png";
+// import thumb3 from "./images/thumb3.png";
+// import thumb4 from "./images/thumb4.png";
+// import thumb5 from "./images/thumb5.png";
+// import thumb6 from "./images/thumb6.png";
+// import thumb7 from "./images/thumb7.png";
+
+import curtainThumb from "./images/CurtainThumb.jpg";
+import homesickSteveThumb from "./images/HomesickSteveThumb.png";
+import macintoshThumb from "./images/MacintoshThumb.png";
+import MFTHUMB from "./images/MFTHUMB.png";
+import odeToBetaThumb from "./images/OdeToBetaThumb.png";
 
 function App() {
   const [modalVisibility, setModalVisibility] = useState(false);
@@ -23,7 +29,7 @@ function App() {
 
   function modalToggle() {
     setModalVisibility(!modalVisibility);
-    if (videoScrollState == "scrolling") {
+    if (videoScrollState === "scrolling") {
       setVideoScrollState("paused");
     } else {
       setVideoScrollState("scrolling");
@@ -37,66 +43,48 @@ function App() {
   const videoArray = [
     {
       key: NaN,
-      thumbnail: thumb1,
+      thumbnail: curtainThumb,
       alt: 1,
-      title: "video 1",
-      info: "This is video 1",
-      link: "https://www.youtube.com/watch?v=rKI0rQZhTCc",
-      embedLink: "https://www.youtube.com/embed/rKI0rQZhTCc?&autoplay=1",
+      title: "Elvis Cymraeg by Bean Weevil",
+      info: "A wonderful video about welsh elvis what a laff and a jape",
+      link: "https://www.youtube.com/watch?v=ZrUM8roaZqc",
+      embedLink: "https://www.youtube.com/embed/ZrUM8roaZqc?&autoplay=1",
     },
     {
       key: NaN,
-      thumbnail: thumb2,
+      thumbnail: macintoshThumb,
       alt: 2,
-      title: "video 2",
-      info: "This is video 2",
-      link: "https://www.youtube.com/watch?v=rKI0rQZhTCc",
-      embedLink: "https://www.youtube.com/embed/IBjY5WSI4fY?&autoplay=1",
+      title: "Macintosh Plus by Bedside Manners",
+      info: "An epic video filmed in a challenging location with a set built by the genius mind of Pat Downie",
+      link: "https://vimeo.com/812538900",
+      embedLink: "https://player.vimeo.com/video/812538900?h=478184cea4&autoplay=1",
     },
     {
       key: NaN,
-      thumbnail: thumb3,
+      thumbnail: odeToBetaThumb,
       alt: 3,
-      title: "video 3",
-      info: "This is video 3",
-      link: "https://www.youtube.com/watch?v=rKI0rQZhTCc",
-      embedLink: "https://www.youtube.com/embed/slwmJLaVrdE?&autoplay=1",
+      title: "Ode to the Beta Sprayer",
+      info: "A video featuring a very funny and guffaw inducing poem that will generating big hoots and hollars for those that are 'in the know'",
+      link: "https://www.youtube.com/watch?v=HIXeE9hrbXM",
+      embedLink: "https://www.youtube.com/embed/HIXeE9hrbXM?&autoplay=1",
     },
     {
       key: NaN,
-      thumbnail: thumb4,
+      thumbnail: MFTHUMB,
       alt: 4,
-      title: "video 4",
-      info: "This is video 4",
-      link: "https://www.youtube.com/watch?v=rKI0rQZhTCc",
-      embedLink: "https://www.youtube.com/embed/OihbIgXBsMU?&autoplay=1",
+      title: "Mould Fund - Bonsai Trees in Lines (Live in a Forest Glen)",
+      info: "a very epic and cool vid displaying guitar prowess and nice flowers for the viewer to sniff. it's nothing to sniff at!",
+      link: "https://www.youtube.com/watch?v=VavNSyDj_1U",
+      embedLink: "https://www.youtube.com/embed/VavNSyDj_1U?&autoplay=1",
     },
     {
       key: NaN,
-      thumbnail: thumb5,
-      alt: 5,
-      title: "video 5",
-      info: "This is video 5",
-      link: "https://www.youtube.com/watch?v=rKI0rQZhTCc",
-      embedLink: "https://www.youtube.com/embed/2ZQde8ubmDg?&autoplay=1",
-    },
-    {
-      key: NaN,
-      thumbnail: thumb6,
+      thumbnail: homesickSteveThumb,
       alt: 6,
-      title: "video 6",
-      info: "This is video 6",
-      link: "https://www.youtube.com/watch?v=rKI0rQZhTCc",
-      embedLink: "https://www.youtube.com/embed/zfRjsn0fNmI?&autoplay=1",
-    },
-    {
-      key: NaN,
-      thumbnail: thumb7,
-      alt: 7,
-      title: "video 7",
-      info: "This is video 7",
-      link: "https://www.youtube.com/watch?v=rKI0rQZhTCc",
-      embedLink: "https://www.youtube.com/embed/s1TsnnqgkoY?&autoplay=1",
+      title: "Homesick Steve (live session)",
+      info: "steve is very homesick",
+      link: "https://www.youtube.com/watch?v=yZYtYTvxcoc",
+      embedLink: "https://www.youtube.com/embed/yZYtYTvxcoc?&autoplay=1",
     },
   ];
 

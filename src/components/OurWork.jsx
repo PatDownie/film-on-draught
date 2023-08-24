@@ -12,6 +12,7 @@ function OurWork({ modalToggle, changeModalContent, videoArray }) {
         <div className="videodiv">
           <div className="videoInfoDiv">
             <img src={infocard} alt="infocard" />
+            <h2 className="videoTitle">{video.title}</h2>
             <p className="videoInfo">{video.info}</p>
             <p
               className="watchbuttonembed"
@@ -28,9 +29,9 @@ function OurWork({ modalToggle, changeModalContent, videoArray }) {
           </div>
           <div className="videoThumbnailDiv">
             <img src={video.thumbnail} alt="video thumbnail" />
-            <div className="videoTitleDiv">
+            {/* <div className="videoTitleDiv">
               <p className="videoTitle">{video.title}</p>
-            </div>
+            </div> */}
           </div>
         </div>
       ))}
