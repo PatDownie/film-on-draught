@@ -128,7 +128,7 @@
   }
 
   #navdiv {
-    position: relative;
+    position: fixed;
     background-color: #282828;
     max-width: 100%;
     min-width: 100%;

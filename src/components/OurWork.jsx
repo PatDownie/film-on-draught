@@ -12,20 +12,22 @@ function OurWork({ modalToggle, changeModalContent, videoArray }) {
         <div className="videodiv">
           <div className="videoInfoDiv">
             <img src={infocard} alt="infocard" />
-            <h2 className="videoTitle">{video.title}</h2>
-            <p className="videoInfo">{video.info}</p>
-            <p
-              className="watchbuttonembed"
-              onClick={() => {
-                modalToggle();
-                changeModalContent(video.embedLink);
-              }}
-            >
-              watch
-            </p>
-            <a className="watchbuttonlink" href={video.link}>
-              watch
-            </a>
+            <div className="videoInfoContentDiv">
+              <h2 className="videoTitle">{video.title}</h2>
+              <p className="videoInfo">{video.info}</p>
+              <p
+                className="watchbuttonembed"
+                onClick={() => {
+                  modalToggle();
+                  changeModalContent(video.embedLink);
+                }}
+              >
+                watch
+              </p>
+              <a className="watchbuttonlink" href={video.link}>
+                watch
+              </a>
+            </div>
           </div>
           <div className="videoThumbnailDiv">
             <img src={video.thumbnail} alt="video thumbnail" />
