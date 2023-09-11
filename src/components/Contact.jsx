@@ -1,5 +1,5 @@
 import chrisAvatar from "../images/chris-avatar.png";
-import bubble from "../images/contactbubble1.gif";
+import bubble from "../images/chris speech bubble 1.gif";
 import sadimg from "../images/chris-avatar-sad.png";
 import puzzledimg from "../images/chris-avatar-puzzled.png";
 import neutralimg from "../images/chris-avatar-neutral.png";

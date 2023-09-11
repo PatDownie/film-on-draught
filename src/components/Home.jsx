@@ -1,19 +1,19 @@
 import MusicVideos from "./MusicVideos";
 import vidoeArrow from "../images/vidoe-1-cropped.gif";
+import showreelcard from "../images/showreelcard.gif";
 import showReelButton from "../images/showReelButton1Crop.gif";
 import "../Home.css";
 
-function Home({ modalToggle, changeModalContent, videoScrollState, videoArray }) {
+function Home({ videoArray }) {
   return (
     <div id="homediv">
-      {/* <MusicVideos videoScrollState={videoScrollState} modalToggle={modalToggle} changeModalContent={changeModalContent} videoArray={videoArray} /> */}
       <div id="contentdiv">
-        <div id="homeTextDiv">
-          <p>we make cool vidoes</p>
+        <div id="showreelcontainer">
+          <img src={showreelcard} alt="squiggly aesthetic background" />
+          <div id="iframecontainer">
+            <iframe src="https://www.youtube.com/embed/f4w3qJjCVGU?color=white&rel=0" frameborder="0" allow="fullscreen" id="showreel"></iframe>
+          </div>
         </div>
-        <img src={vidoeArrow} alt="arrow" id="vidoeArrow" />
-
-        <iframe src="https://www.youtube.com/embed/TFnUkigM5z8" frameborder="0" id="homeVideo"></iframe>
       </div>
       <div id="mobilediv">
         <div id="showreelcontainer">

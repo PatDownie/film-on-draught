@@ -4,46 +4,76 @@
   #homediv {
   }
 
+  #mobilediv {
+    display: none;
+  }
+
   #contentdiv {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  #showreelcontainer {
+    position: relative;
+    width: 90%;
+  }
+
+  #showreelcontainer img {
+    width: 100%;
+  }
+
+  #iframecontainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
     align-items: center;
   }
 
-  #homeTextDiv {
-    max-width: 480px;
-    padding-left: 1rem;
-    color: #282828;
-    /* background-color: antiquewhite; */
-    font-family: "Inter", sans-serif;
-    font-weight: 800;
-    font-size: 9rem;
-  }
+  #showreel {
+    aspect-ratio: 16 / 9 !important;
 
-  #vidoeArrow {
-    object-fit: scale-down;
-    max-width: 300px;
-  }
-
-  #homeVideo {
-    width: 530px;
-    height: 300px;
-    padding-right: 1rem;
+    width: 90%;
   }
 }
 
 @media (max-width: 750px) {
   #contentdiv {
-    display: none;
+    margin-top: 200px;
   }
   #mobilediv {
-    /* background-color: aqua; */
+    display: none;
   }
   #showreelcontainer {
+    position: relative;
     width: 100%;
   }
+
   #showreelcontainer img {
     width: 100%;
+  }
+
+  #iframecontainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #showreel {
+    aspect-ratio: 16 / 9 !important;
+
+    width: 90%;
   }
 }
