@@ -185,4 +185,9 @@
   #logoandnavcontainer ul li .active {
     color: #d4b15d;
   }
+
+  #headerborder {
+    height: 30px;
+    width: 100%;
+  }
 }

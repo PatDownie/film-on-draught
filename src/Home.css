@@ -1,9 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 @media (min-width: 751px) {
-  #homediv {
-  }
-
   #mobilediv {
     display: none;
   }
@@ -92,6 +89,8 @@
 
   #squigglyborderWHITE {
     vertical-align: top;
+    height: 30px;
+    width: 100%;
   }
 
   #hometextcontainer {
@@ -105,8 +104,8 @@
     font-weight: 900;
     font-size: 3rem;
     line-height: 1.1;
-    text-align: center;
 
+    text-align: center;
     margin: 0 1rem;
   }
 }
