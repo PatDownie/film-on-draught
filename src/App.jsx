@@ -1,6 +1,7 @@
 import "./App.css";
 import "./reset.css";
 import logo from "./images/logo-png.png";
+import squiggleBorder from "./images/squiggle border.gif";
 import VideoModal from "./components/VideoModal";
 import Home from "./components/Home";
 import OurWork from "./components/OurWork";
@@ -92,25 +93,28 @@ function App() {
     <BrowserRouter>
       <div className="App">
         <div id="sitecontainer">
-          <div id="navdiv">
-            <img src={logo} alt="VERY COOL FILM ON DRAUGHT LOGO" id="mainlogo" />
-            <ul>
-              <li>
-                <NavLink className="NavLink" to="/">
-                  HOME
-                </NavLink>
-              </li>
-              <li>
-                <NavLink className="NavLink" to="/work">
-                  OUR WORK
-                </NavLink>
-              </li>
-              <li>
-                <NavLink className="NavLink" to="/contact">
-                  CONTACT US
-                </NavLink>
-              </li>
-            </ul>
+          <div id="headercontainer">
+            <div id="logoandnavcontainer">
+              <img src={logo} alt="VERY COOL FILM ON DRAUGHT LOGO" id="mainlogo" />
+              <ul>
+                <li>
+                  <NavLink className="NavLink" to="/">
+                    HOME
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink className="NavLink" to="/work">
+                    OUR WORK
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink className="NavLink" to="/contact">
+                    CONTACT US
+                  </NavLink>
+                </li>
+              </ul>
+            </div>
+            <img src={squiggleBorder} alt="Squiggly Border" id="headerborder" />
           </div>
           <div id="contentcontainer">
             <Routes>
