@@ -15,60 +15,64 @@ function Contact() {
   ];
 
   const [emotionImg, setEmotionImg] = useState(emotionArray[0].image);
+  const [buttonDispersal, setButtonDispersal] = useState(false);
+  const [clickedState, setclickedState] = useState("unclicked");
 
   function emotionChange(emotionSelection) {
     setEmotionImg(emotionSelection);
   }
 
+  function disperseButtons() {
+    if (buttonDispersal == false) {
+      setButtonDispersal(true);
+      setclickedState("clicked");
+    } else {
+      setButtonDispersal(false);
+      setclickedState("unclicked");
+    }
+  }
+
   return (
-    <div id="contactdivcontainer">
+    <div id="contactpagecontainer">
       <div id="contactdiv">
-        <div id="speechbubblediv">
+        <div id="speechbubblecontainer">
           <img src={bubble} alt="speech bubble" id="bubble" />
-          <p>
-            Hi My name is Chris! <br /> You can contact me like this:
-            <br />
-            EMAIL: FILMONDRAUGHT@EMAILS.COM
-            <br />
-            PHONE: 07123456789
-            <br />
-            SMOKE SIGNAL: ENSURE STRONG NORTHWESTERLY PREVAILING WIND
-          </p>
+          <div id="contactinfocontainer">
+            <p id="contactinfo">
+              Hi My name is Chris! <br /> You can contact me like this:
+              <br />
+              EMAIL: FILMONDRAUGHT@EMAILS.COM
+              <br />
+              PHONE: 07123456789
+              <br />
+              SMOKE SIGNAL: <br />
+              ENSURE STRONG NORTHWESTERLY PREVAILING WIND
+            </p>
+          </div>
         </div>
         <img src={emotionImg} alt="avatar" id="avatar" />
       </div>
-      <p
-        className="emotionButton"
-        onClick={() => {
-          emotionChange(emotionArray[0].image);
-        }}
-      >
-        Happy
-      </p>
-      <p
-        className="emotionButton"
-        onClick={() => {
-          emotionChange(emotionArray[1].image);
-        }}
-      >
-        Sad
-      </p>
-      <p
-        className="emotionButton"
-        onClick={() => {
-          emotionChange(emotionArray[2].image);
-        }}
-      >
-        Puzzled
-      </p>
-      <p
-        className="emotionButton"
-        onClick={() => {
-          emotionChange(emotionArray[3].image);
-        }}
-      >
-        Neutral
-      </p>
+      <div id="emotionselectiondiv">
+        <p
+          className={clickedState + " " + "button"}
+          onClick={() => {
+            disperseButtons();
+          }}
+        >
+          Emotions
+        </p>
+        {buttonDispersal &&
+          emotionArray.map((emotion) => (
+            <p
+              className="emotionbutton"
+              onClick={() => {
+                emotionChange(emotion.image);
+              }}
+            >
+              {emotion.emotion}
+            </p>
+          ))}
+      </div>
     </div>
   );
 }

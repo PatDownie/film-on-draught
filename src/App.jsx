@@ -1,11 +1,15 @@
 import "./App.css";
 import "./reset.css";
+
 import logo from "./images/logo-png.png";
 import squiggleBorder from "./images/squiggle border.gif";
+import squiggleBorderLARGE from "./images/large sqiggle border.gif";
+
 import VideoModal from "./components/VideoModal";
 import Home from "./components/Home";
 import OurWork from "./components/OurWork";
 import Contact from "./components/Contact";
+
 import { useState } from "react";
 import { BrowserRouter, Routes, Route, NavLink } from "react-router-dom";
 
@@ -114,7 +118,8 @@ function App() {
                 </li>
               </ul>
             </div>
-            <img src={squiggleBorder} alt="Squiggly Border" id="headerborder" />
+            <img src={squiggleBorder} alt="Squiggly Border" id="headerbordermobile" />
+            <img src={squiggleBorderLARGE} alt="Squiggly Border" id="headerborderdesktop" />
           </div>
           <div id="contentcontainer">
             <Routes>

@@ -1,61 +1,199 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
-#contactdivcontainer {
-  /* background-color: lawngreen; */
-  display: flex;
-  justify-content: center;
-  height: 100vh;
+* {
+  box-sizing: border-box;
 }
 
-#contactdiv {
-  position: relative;
-  /* background-color: aqua; */
-  height: 100%;
-  min-width: 900px;
+@media (min-width: 751px) {
+  #contactpagecontainer {
+    /* background-color: aqua; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  #contactdiv {
+    /* background-color: rgb(0, 255, 42); */
+    max-width: 200%;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+  }
+  #speechbubblecontainer {
+    position: relative;
+    height: 60vh;
+    width: 100%;
+  }
+  #bubble {
+    object-fit: contain;
+    height: 100%;
+    /* max-width: 100%; */
+    z-index: -1;
+  }
+
+  #contactinfocontainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    padding: 10% 7%;
+
+    /* background-color: rgba(165, 42, 42, 0.308); */
+  }
+
+  #contactinfo {
+    font-family: inter;
+    font-weight: 800;
+    font-size: 3vh;
+    line-height: 4.5vh;
+
+    text-align: center;
+  }
+
+  #avatar {
+    object-fit: contain;
+    align-self: start;
+    padding-left: 10%;
+    margin-top: -10%;
+    z-index: 2;
+    min-height: 0;
+  }
+
+  #emotionselectiondiv {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    /* background-color: aqua; */
+    height: 100%;
+    width: 200px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  #emotionselectiondiv p {
+    padding: 10px;
+    margin: 5px;
+    border-radius: 26px;
+    text-align: center;
+
+    font-family: inter;
+    font-weight: 800;
+  }
+  #emotionselectiondiv p:hover {
+    cursor: pointer;
+  }
+
+  #emotionselectiondiv .button {
+    background-color: #d4b15d;
+  }
+  #emotionselectiondiv .button.clicked {
+    background-color: #282828;
+    color: #d4b15d;
+  }
+
+  #emotionselectiondiv .emotionbutton {
+    background-color: #d4b15d;
+  }
 }
 
-#contactdiv #avatar {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-}
+@media (max-width: 750px) {
+  #contactpagecontainer {
+    margin-top: 180px;
+    /* background-color: aqua; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  #contactdiv {
+    /* background-color: rgb(0, 255, 42); */
+    max-width: 320px;
+    height: calc(100vh - 180px);
 
-#contactdiv #speechbubblediv {
-  /* background-color: crimson; */
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 650px;
-  height: 489px;
-}
+    display: flex;
+    flex-direction: column;
+  }
+  #speechbubblecontainer {
+    position: relative;
+    height: 60%;
+  }
+  #bubble {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+  }
 
-#contactdiv #bubble {
-  object-fit: contain;
-  width: 100%;
-  /* opacity: 0.5; */
-}
+  #contactinfocontainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 
-#contactdiv #speechbubblediv p {
-  position: absolute;
-  top: 70px;
-  left: 70px;
-  width: 450px;
-  height: 300px;
-  /* background-color: aqua; */
+    padding: 10% 7%;
 
-  font-family: "inter", sans-serif;
-  font-weight: 500;
-  font-size: 1.8rem;
-  line-height: 1.1em;
-}
+    /* background-color: rgba(165, 42, 42, 0.308); */
+  }
 
-#contactdivcontainer .emotionButton {
-  background-color: coral;
-  padding: 0.2rem;
-  margin: 0.2rem;
-}
+  #contactinfo {
+    font-family: inter;
+    font-weight: 800;
+    font-size: 1rem;
+    line-height: 1.6;
 
-#contactdivcontainer .emotionButton:hover {
-  background-color: rgb(248, 194, 174);
-  cursor: pointer;
+    text-align: center;
+  }
+
+  #avatar {
+    object-fit: contain;
+    align-self: start;
+    margin-top: -10%;
+    margin-left: 0;
+    z-index: 2;
+    min-height: 0;
+  }
+
+  #emotionselectiondiv {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    /* background-color: aqua; */
+    height: 100%;
+    width: 150px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    z-index: 2;
+
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  #emotionselectiondiv p {
+    padding: 10px;
+    margin: 5px;
+    border-radius: 26px;
+    text-align: center;
+
+    font-family: inter;
+    font-weight: 800;
+  }
+  #emotionselectiondiv p:hover {
+    cursor: pointer;
+  }
+
+  #emotionselectiondiv .button {
+    background-color: #d4b15d;
+  }
+  #emotionselectiondiv .button.clicked {
+    background-color: #282828;
+    color: #d4b15d;
+  }
+
+  #emotionselectiondiv .emotionbutton {
+    background-color: #d4b15d;
+  }
 }
