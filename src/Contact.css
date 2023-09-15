@@ -13,22 +13,18 @@
   }
   #contactdiv {
     /* background-color: rgb(0, 255, 42); */
-    max-width: 200%;
+    /* max-width: 350px; */
     height: 100vh;
-
-    display: flex;
-    flex-direction: column;
+    margin-left: 10px;
   }
   #speechbubblecontainer {
     position: relative;
-    height: 60vh;
-    width: 100%;
+    height: 60%;
   }
   #bubble {
-    object-fit: contain;
     height: 100%;
-    /* max-width: 100%; */
-    z-index: -1;
+    width: 100%;
+    /* object-fit: scale-down; */
   }
 
   #contactinfocontainer {
@@ -46,19 +42,16 @@
   #contactinfo {
     font-family: inter;
     font-weight: 800;
-    font-size: 3vh;
-    line-height: 4.5vh;
+    font-size: 2.8vh;
+    line-height: 1.6;
 
     text-align: center;
+    word-break: break-word;
   }
 
   #avatar {
-    object-fit: contain;
-    align-self: start;
-    padding-left: 10%;
-    margin-top: -10%;
-    z-index: 2;
-    min-height: 0;
+    height: 50%;
+    transform: translateY(-10%);
   }
 
   #emotionselectiondiv {
@@ -111,11 +104,8 @@
   }
   #contactdiv {
     /* background-color: rgb(0, 255, 42); */
-    max-width: 320px;
+    max-width: 450px;
     height: calc(100vh - 180px);
-
-    display: flex;
-    flex-direction: column;
   }
   #speechbubblecontainer {
     position: relative;
@@ -124,7 +114,7 @@
   #bubble {
     height: 100%;
     width: 100%;
-    object-fit: contain;
+    /* object-fit: scale-down; */
   }
 
   #contactinfocontainer {
@@ -142,19 +132,16 @@
   #contactinfo {
     font-family: inter;
     font-weight: 800;
-    font-size: 1rem;
+    font-size: calc(0.029 * (100vh - 180px));
     line-height: 1.6;
 
     text-align: center;
+    word-break: break-word;
   }
 
   #avatar {
-    object-fit: contain;
-    align-self: start;
-    margin-top: -10%;
-    margin-left: 0;
-    z-index: 2;
-    min-height: 0;
+    height: 50%;
+    transform: translateY(-10%);
   }
 
   #emotionselectiondiv {
