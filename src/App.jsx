@@ -1,7 +1,8 @@
 import "./App.css";
 import "./reset.css";
 
-import logo from "./images/logo-png.png";
+import logo200 from "./images/FILM ON DRAUGHT LOGO200.png";
+import logo600 from "./images/FILM ON DRAUGHT LOGO600.png";
 import squiggleBorder from "./images/squiggle border.gif";
 import squiggleBorderLARGE from "./images/large sqiggle border.gif";
 
@@ -21,11 +22,16 @@ import { BrowserRouter, Routes, Route, NavLink } from "react-router-dom";
 // import thumb6 from "./images/thumb6.png";
 // import thumb7 from "./images/thumb7.png";
 
-import curtainThumb from "./images/CurtainThumb.jpg";
-import homesickSteveThumb from "./images/HomesickSteveThumb.png";
-import macintoshThumb from "./images/MacintoshThumb.png";
-import MFTHUMB from "./images/MFTHUMB.png";
-import odeToBetaThumb from "./images/OdeToBetaThumb.png";
+import curtainThumb400 from "./images/CurtainThumb400.jpg";
+import curtainThumb800 from "./images/CurtainThumb800.jpg";
+import homesickSteveThumb400 from "./images/HomesickSteveThumb400.jpg";
+import homesickSteveThumb800 from "./images/HomesickSteveThumb800.jpg";
+import macintoshThumb400 from "./images/MacintoshThumb400.jpg";
+import macintoshThumb800 from "./images/MacintoshThumb800.jpg";
+import MFTHUMB400 from "./images/MFTHUMB400.jpg";
+import MFTHUMB800 from "./images/MFTHUMB800.jpg";
+import odeToBetaThumb400 from "./images/OdeToBeta400.jpg";
+import odeToBetaThumb800 from "./images/OdeToBeta800.jpg";
 
 function App() {
   const [modalVisibility, setModalVisibility] = useState(false);
@@ -48,50 +54,57 @@ function App() {
   const videoArray = [
     {
       key: NaN,
-      thumbnail: curtainThumb,
+      smallThumbnail: curtainThumb400,
+      largeThumbnail: curtainThumb800,
       alt: 1,
-      title: "Elvis Cymraeg by Bean Weevil",
-      info: "A wonderful video about welsh elvis what a laff and a jape",
+      title: "Bean Weevil - Elvis Cymraeg",
+      info: "Debut music video for Bean Weevil, alt rockers and Sheffield staples. Made in support of their Elvis Cymraeg single launch.",
       link: "https://www.youtube.com/watch?v=ZrUM8roaZqc",
       embedLink: "https://www.youtube.com/embed/ZrUM8roaZqc?&autoplay=1",
     },
+    // {
+    //   key: NaN,
+    //   smallThumbnail: macintoshThumb400,
+    //   largeThumbnail: macintoshThumb800,
+    //   alt: 2,
+    //   title: "Macintosh Plus by Bedside Manners",
+    //   info: "An epic video filmed in a challenging location with a set built by the genius mind of Pat Downie",
+    //   link: "https://vimeo.com/812538900",
+    //   embedLink: "https://player.vimeo.com/video/812538900?h=478184cea4&autoplay=1",
+    // },
     {
       key: NaN,
-      thumbnail: macintoshThumb,
-      alt: 2,
-      title: "Macintosh Plus by Bedside Manners",
-      info: "An epic video filmed in a challenging location with a set built by the genius mind of Pat Downie",
-      link: "https://vimeo.com/812538900",
-      embedLink: "https://player.vimeo.com/video/812538900?h=478184cea4&autoplay=1",
-    },
-    {
-      key: NaN,
-      thumbnail: odeToBetaThumb,
+      smallThumbnail: odeToBetaThumb400,
+      largeThumbnail: odeToBetaThumb800,
       alt: 3,
-      title: "Ode to the Beta Sprayer",
-      info: "A video featuring a very funny and guffaw inducing poem that will generating big hoots and hollars for those that are 'in the know'",
+      title: "Ode to the Beta Sprayer ft. Patrick Downie - The Climbing Hangar",
+      info: "Skilled wordsmith Patrick Downie celebrates climbing's unsung heroes in Ode to the Beta Sprayer. This skit played across The Climbing Hanger's blogs and socials.",
       link: "https://www.youtube.com/watch?v=HIXeE9hrbXM",
       embedLink: "https://www.youtube.com/embed/HIXeE9hrbXM?&autoplay=1",
     },
     {
       key: NaN,
-      thumbnail: MFTHUMB,
+      smallThumbnail: MFTHUMB400,
+      largeThumbnail: MFTHUMB800,
       alt: 4,
-      title: "Mould Fund - Bonsai Trees in Lines (Live in a Forest Glen)",
-      info: "a very epic and cool vid displaying guitar prowess and nice flowers for the viewer to sniff. it's nothing to sniff at!",
+      title: "Mould Fund - Bonsai Trees in Lines (Session)",
+      info: "EMBRACE THE SOFT ROT!	First live session for Brighton-based Mould Fund, recorded on location in Forest Glen, with visuals from 1L1T.",
       link: "https://www.youtube.com/watch?v=VavNSyDj_1U",
       embedLink: "https://www.youtube.com/embed/VavNSyDj_1U?&autoplay=1",
     },
     {
       key: NaN,
-      thumbnail: homesickSteveThumb,
+      smallThumbnail: homesickSteveThumb400,
+      largeThumbnail: homesickSteveThumb800,
       alt: 6,
-      title: "Homesick Steve (live session)",
-      info: "steve is very homesick",
+      title: "Alastair Gordon - Homesick Steve (Session)",
+      info: "Alaistair Gordon's boozy, bluesy live session, recorded on location at Mouse Room Studio, Sheffield",
       link: "https://www.youtube.com/watch?v=yZYtYTvxcoc",
       embedLink: "https://www.youtube.com/embed/yZYtYTvxcoc?&autoplay=1",
     },
   ];
+
+  const logoSrcSet = logo200 + " 200h, " + logo600 + " 600h";
 
   return (
     <BrowserRouter>
@@ -99,7 +112,7 @@ function App() {
         <div id="sitecontainer">
           <div id="headercontainer">
             <div id="logoandnavcontainer">
-              <img src={logo} alt="VERY COOL FILM ON DRAUGHT LOGO" id="mainlogo" />
+              <img srcSet={logoSrcSet} sizes="(max-width: 751px) 400px, 800px" src={logo600} alt="VERY COOL FILM ON DRAUGHT LOGO" id="mainlogo" />
               <ul>
                 <li>
                   <NavLink className="NavLink" to="/">

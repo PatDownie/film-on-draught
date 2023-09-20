@@ -160,7 +160,7 @@
     flex-direction: column;
     align-items: center;
 
-    margin-top: 160px;
+    margin-top: 175px;
   }
 
   #ourworkdiv #squiggleDiv img {
@@ -240,22 +240,26 @@
     justify-content: space-between;
     align-items: center;
 
-    padding: 2.5rem 0 1.5rem 0;
+    padding: 3rem 0 2rem 0;
     /* background-color: #fa1212; */
   }
 
   #ourworkdiv .videoTitle {
     font-family: "inter", sans-serif;
     color: #d8b65f;
-    font-size: 2rem;
+    font-size: 6vw;
     font-weight: 800;
     text-align: center;
     max-width: 80%;
   }
 
   #ourworkdiv .videoInfoDiv .videoInfo {
+    font-family: inter;
+    font-weight: 500;
+    font-size: 4vw;
     color: white;
-    max-width: 70%;
+    max-width: 80%;
+    padding: 0.4rem 0;
   }
 
   #ourworkdiv .videoInfoDiv .watchbuttonlink {

@@ -98,14 +98,34 @@
     padding-bottom: 2rem;
   }
 
-  #hometext {
-    color: white;
+  .hometext {
     font-family: inter;
     font-weight: 900;
-    font-size: 3rem;
+    font-size: 2rem;
     line-height: 1.1;
 
     text-align: center;
-    margin: 0 1rem;
+    padding: 0 5% 1rem 5%;
+  }
+  .goldhometext {
+    color: white;
+    text-align: left;
+  }
+  .raisinhometext {
+    color: #d4b15d;
+    background-color: #282828;
+
+    text-align: right;
+  }
+
+  .squigglyborderRAISIN {
+    width: 100%;
+    height: 30px;
+
+    vertical-align: middle;
+  }
+  .flipped {
+    rotate: 180deg;
+    margin-top: -15px;
   }
 }
