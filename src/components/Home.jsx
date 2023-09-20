@@ -16,7 +16,7 @@ function Home({ videoArray }) {
       </div>
       <img src={squiggleBorderWHITE} alt="A squiggly border" id="squigglyborderWHITE" />
       <div id="hometextcontainer">
-        <p className="hometext goldhometext">For artists and artisans with a passion for creative storytelling</p>
+        <p className="hometext goldhometext">Film on Draught - For artists and artisans with a passion for creative storytelling</p>
         <img src={squiggleBorderRAISIN} alt="A squiggly border" className="squigglyborderRAISIN flipped" />
 
         <p className="hometext raisinhometext">We serve crisp, refreshing films for ambitious bands and growing brands.</p>
