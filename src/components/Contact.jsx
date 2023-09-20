@@ -3,12 +3,13 @@ import bubble from "../images/chris speech bubble 1.gif";
 import sadimg from "../images/chris-avatar-sad.png";
 import puzzledimg from "../images/chris-avatar-puzzled.png";
 import neutralimg from "../images/chris-avatar-neutral.png";
+import placeholderAvatar from "../images/placeholder-avatar.jpg";
 import "../Contact.css";
 import { useState } from "react";
 
 function Contact() {
   const emotionArray = [
-    { emotion: "Happy", image: chrisAvatar },
+    { emotion: "Happy", image: placeholderAvatar },
     { emotion: "Sad", image: sadimg },
     { emotion: "Puzzled", image: puzzledimg },
     { emotion: "Neutral", image: neutralimg },
@@ -41,18 +42,21 @@ function Contact() {
             <p id="contactinfo">
               Hi My name is Chris! <br /> You can contact me like this:
               <br />
-              EMAIL: FILMONDRAUGHT@EMAILS.COM
               <br />
-              PHONE: 07123456789
+              EMAIL: filmondraught@gmail.com
+              <br />
+              <br />
+              PHONE: 07502421156
+              <br />
               <br />
               SMOKE SIGNAL: <br />
-              ENSURE STRONG NORTHWESTERLY PREVAILING WIND
+              ensure strong southeasterly prevailing wind
             </p>
           </div>
         </div>
         <img src={emotionImg} alt="avatar" id="avatar" />
       </div>
-      <div id="emotionselectiondiv">
+      {/* <div id="emotionselectiondiv">
         <p
           className={clickedState + " " + "button"}
           onClick={() => {
@@ -72,7 +76,7 @@ function Contact() {
               {emotion.emotion}
             </p>
           ))}
-      </div>
+      </div> */}
     </div>
   );
 }

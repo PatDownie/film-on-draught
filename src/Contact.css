@@ -20,6 +20,7 @@
   #speechbubblecontainer {
     position: relative;
     height: 60%;
+    z-index: 2;
   }
   #bubble {
     height: 100%;
@@ -43,15 +44,16 @@
     font-family: inter;
     font-weight: 800;
     font-size: 2.8vh;
-    line-height: 1.6;
+    line-height: 1.45;
 
     text-align: center;
     word-break: break-word;
   }
 
   #avatar {
-    height: 50%;
-    transform: translateY(-10%);
+    height: 40%;
+    transform: translateY(-10%) rotate(-5deg);
+    box-shadow: 15px 15px #464646;
   }
 
   #emotionselectiondiv {
@@ -110,6 +112,7 @@
   #speechbubblecontainer {
     position: relative;
     height: 60%;
+    z-index: 2;
   }
   #bubble {
     height: 100%;
@@ -133,15 +136,16 @@
     font-family: inter;
     font-weight: 800;
     font-size: calc(0.029 * (100vh - 180px));
-    line-height: 1.6;
+    line-height: 1.45;
 
     text-align: center;
     word-break: break-word;
   }
 
   #avatar {
-    height: 50%;
-    transform: translateY(-10%);
+    height: 40%;
+    transform: translateY(-10%) translateX(20%) rotate(-5deg);
+    box-shadow: 15px 15px #464646;
   }
 
   #emotionselectiondiv {
