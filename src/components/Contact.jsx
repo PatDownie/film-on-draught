@@ -43,7 +43,9 @@ function Contact() {
               Hi My name is Chris! <br /> You can contact me like this:
               <br />
               <br />
-              EMAIL: filmondraught@gmail.com
+              EMAIL:
+              <br />
+              filmondraught@gmail.com
               <br />
               <br />
               PHONE: 07502421156

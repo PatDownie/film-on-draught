@@ -44,7 +44,7 @@
     font-family: inter;
     font-weight: 800;
     font-size: 2.8vh;
-    line-height: 1.45;
+    line-height: 1.3;
 
     text-align: center;
     word-break: break-word;
@@ -136,7 +136,7 @@
     font-family: inter;
     font-weight: 800;
     font-size: calc(0.029 * (100vh - 180px));
-    line-height: 1.45;
+    line-height: 1.3;
 
     text-align: center;
     word-break: break-word;

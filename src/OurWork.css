@@ -107,6 +107,8 @@
 
   #ourworkdiv .videoInfoDiv .videoInfo {
     color: white;
+    font-family: inter;
+    font-weight: 500;
     max-width: 50%;
   }
 
