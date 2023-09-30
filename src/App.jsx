@@ -32,6 +32,10 @@ import MFTHUMB400 from "./images/MFTHUMB400.jpg";
 import MFTHUMB800 from "./images/MFTHUMB800.jpg";
 import odeToBetaThumb400 from "./images/OdeToBeta400.jpg";
 import odeToBetaThumb800 from "./images/OdeToBeta800.jpg";
+import blackwater400 from "./images/Blackwater400.jpg";
+import blackwater800 from "./images/Blackwater800.jpg";
+import SS400 from "./images/SS400.jpg";
+import SS800 from "./images/SS800.jpg";
 
 function App() {
   const [modalVisibility, setModalVisibility] = useState(false);
@@ -76,7 +80,7 @@ function App() {
       key: NaN,
       smallThumbnail: odeToBetaThumb400,
       largeThumbnail: odeToBetaThumb800,
-      alt: 3,
+      alt: 2,
       title: "Ode to the Beta Sprayer ft. Patrick Downie - The Climbing Hangar",
       info: "Skilled wordsmith Patrick Downie celebrates climbing's unsung heroes in Ode to the Beta Sprayer. This skit played across The Climbing Hanger's blogs and socials.",
       link: "https://www.youtube.com/watch?v=HIXeE9hrbXM",
@@ -86,7 +90,7 @@ function App() {
       key: NaN,
       smallThumbnail: MFTHUMB400,
       largeThumbnail: MFTHUMB800,
-      alt: 4,
+      alt: 3,
       title: "Mould Fund - Bonsai Trees in Lines (Session)",
       info: "EMBRACE THE SOFT ROT!	First live session for Brighton-based Mould Fund, recorded on location in Forest Glen, with visuals from 1L1T.",
       link: "https://www.youtube.com/watch?v=VavNSyDj_1U",
@@ -96,11 +100,31 @@ function App() {
       key: NaN,
       smallThumbnail: homesickSteveThumb400,
       largeThumbnail: homesickSteveThumb800,
-      alt: 6,
+      alt: 4,
       title: "Alastair Gordon - Homesick Steve (Session)",
       info: "Alaistair Gordon's boozy, bluesy live session, recorded on location at Mouse Room Studio, Sheffield",
       link: "https://www.youtube.com/watch?v=yZYtYTvxcoc",
       embedLink: "https://www.youtube.com/embed/yZYtYTvxcoc?&autoplay=1",
+    },
+    {
+      key: NaN,
+      smallThumbnail: blackwater400,
+      largeThumbnail: blackwater800,
+      alt: 5,
+      title: "Alastair Gordon - The Blackwater Orchestra (Session)",
+      info: "Sheffield's own folk hero Alastair Gordon promo's an upcoming single in this Soviet inspired session.",
+      link: "https://www.youtube.com/watch?v=RNHRqRbDu20",
+      embedLink: "https://www.youtube.com/embed/RNHRqRbDu20?&autoplay=1",
+    },
+    {
+      key: NaN,
+      smallThumbnail: SS400,
+      largeThumbnail: SS800,
+      alt: 6,
+      title: "Georgie Moon: Sandwich Sessions",
+      info: "Brighton based vocalist Georgie Moon serves up a delicious musical snack in the first ever installment of Sandwich Sessions for Bella Union records.",
+      link: "https://www.youtube.com/watch?v=jA5dyxoiKrM",
+      embedLink: "https://www.youtube.com/embed/jA5dyxoiKrM?&autoplay=1",
     },
   ];
 
