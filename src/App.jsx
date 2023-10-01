@@ -58,6 +58,26 @@ function App() {
   const videoArray = [
     {
       key: NaN,
+      smallThumbnail: blackwater400,
+      largeThumbnail: blackwater800,
+      alt: 5,
+      title: "Alastair Gordon - The Blackwater Orchestra (Session)",
+      info: "Sheffield's own folk hero Alastair Gordon promo's an upcoming single in this Soviet inspired session.",
+      link: "https://www.youtube.com/watch?v=RNHRqRbDu20",
+      embedLink: "https://www.youtube.com/embed/RNHRqRbDu20?&autoplay=1",
+    },
+    {
+      key: NaN,
+      smallThumbnail: SS400,
+      largeThumbnail: SS800,
+      alt: 6,
+      title: "Georgie Moon: Sandwich Sessions",
+      info: "Brighton based vocalist Georgie Moon serves up a delicious musical snack in the first ever installment of Sandwich Sessions for Bella Union records.",
+      link: "https://www.youtube.com/watch?v=jA5dyxoiKrM",
+      embedLink: "https://www.youtube.com/embed/jA5dyxoiKrM?&autoplay=1",
+    },
+    {
+      key: NaN,
       smallThumbnail: curtainThumb400,
       largeThumbnail: curtainThumb800,
       alt: 1,
@@ -105,26 +125,6 @@ function App() {
       info: "Alaistair Gordon's boozy, bluesy live session, recorded on location at Mouse Room Studio, Sheffield",
       link: "https://www.youtube.com/watch?v=yZYtYTvxcoc",
       embedLink: "https://www.youtube.com/embed/yZYtYTvxcoc?&autoplay=1",
-    },
-    {
-      key: NaN,
-      smallThumbnail: blackwater400,
-      largeThumbnail: blackwater800,
-      alt: 5,
-      title: "Alastair Gordon - The Blackwater Orchestra (Session)",
-      info: "Sheffield's own folk hero Alastair Gordon promo's an upcoming single in this Soviet inspired session.",
-      link: "https://www.youtube.com/watch?v=RNHRqRbDu20",
-      embedLink: "https://www.youtube.com/embed/RNHRqRbDu20?&autoplay=1",
-    },
-    {
-      key: NaN,
-      smallThumbnail: SS400,
-      largeThumbnail: SS800,
-      alt: 6,
-      title: "Georgie Moon: Sandwich Sessions",
-      info: "Brighton based vocalist Georgie Moon serves up a delicious musical snack in the first ever installment of Sandwich Sessions for Bella Union records.",
-      link: "https://www.youtube.com/watch?v=jA5dyxoiKrM",
-      embedLink: "https://www.youtube.com/embed/jA5dyxoiKrM?&autoplay=1",
     },
   ];
 
