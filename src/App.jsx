@@ -36,6 +36,8 @@ import blackwater400 from "./images/Blackwater400.jpg";
 import blackwater800 from "./images/Blackwater800.jpg";
 import SS400 from "./images/SS400.jpg";
 import SS800 from "./images/SS800.jpg";
+import mouldFund400 from "./images/mouldFund400.jpg";
+import mouldFund800 from "./images/mouldFund800.jpg";
 
 function App() {
   const [modalVisibility, setModalVisibility] = useState(false);
@@ -58,9 +60,29 @@ function App() {
   const videoArray = [
     {
       key: NaN,
+      smallThumbnail: macintoshThumb400,
+      largeThumbnail: macintoshThumb800,
+      alt: 1,
+      title: "WULL - Macintosh",
+      info: "Music video for Liverpool-based rockers WULL (formerly Bedside Manners). Created to support musical themes of freedom and rebellion.",
+      link: "https://vimeo.com/812538900",
+      embedLink: "https://player.vimeo.com/video/812538900?h=478184cea4&autoplay=1",
+    },
+    {
+      key: NaN,
+      smallThumbnail: mouldFund400,
+      largeThumbnail: mouldFund800,
+      alt: 2,
+      title: "Mould Fund Logo - Motion Graphics",
+      info: "Logo splash animation made for Brighton based SOFT ROT band, Mould Fund.",
+      link: "https://www.youtube.com/watch?v=bAoypHQaB08",
+      embedLink: "https://www.youtube.com/embed/bAoypHQaB08?&autoplay=1",
+    },
+    {
+      key: NaN,
       smallThumbnail: blackwater400,
       largeThumbnail: blackwater800,
-      alt: 5,
+      alt: 3,
       title: "Alastair Gordon - The Blackwater Orchestra (Session)",
       info: "Sheffield's own folk hero Alastair Gordon promo's an upcoming single in this Soviet inspired session.",
       link: "https://www.youtube.com/watch?v=RNHRqRbDu20",
@@ -70,7 +92,7 @@ function App() {
       key: NaN,
       smallThumbnail: SS400,
       largeThumbnail: SS800,
-      alt: 6,
+      alt: 4,
       title: "Georgie Moon: Sandwich Sessions",
       info: "Brighton based vocalist Georgie Moon serves up a delicious musical snack in the first ever installment of Sandwich Sessions for Bella Union records.",
       link: "https://www.youtube.com/watch?v=jA5dyxoiKrM",
@@ -80,27 +102,18 @@ function App() {
       key: NaN,
       smallThumbnail: curtainThumb400,
       largeThumbnail: curtainThumb800,
-      alt: 1,
+      alt: 5,
       title: "Bean Weevil - Elvis Cymraeg",
       info: "Debut music video for Bean Weevil, alt rockers and Sheffield staples. Made in support of their Elvis Cymraeg single launch.",
       link: "https://www.youtube.com/watch?v=ZrUM8roaZqc",
       embedLink: "https://www.youtube.com/embed/ZrUM8roaZqc?&autoplay=1",
     },
-    // {
-    //   key: NaN,
-    //   smallThumbnail: macintoshThumb400,
-    //   largeThumbnail: macintoshThumb800,
-    //   alt: 2,
-    //   title: "Macintosh Plus by Bedside Manners",
-    //   info: "An epic video filmed in a challenging location with a set built by the genius mind of Pat Downie",
-    //   link: "https://vimeo.com/812538900",
-    //   embedLink: "https://player.vimeo.com/video/812538900?h=478184cea4&autoplay=1",
-    // },
+
     {
       key: NaN,
       smallThumbnail: odeToBetaThumb400,
       largeThumbnail: odeToBetaThumb800,
-      alt: 2,
+      alt: 6,
       title: "Ode to the Beta Sprayer ft. Patrick Downie - The Climbing Hangar",
       info: "Skilled wordsmith Patrick Downie celebrates climbing's unsung heroes in Ode to the Beta Sprayer. This skit played across The Climbing Hanger's blogs and socials.",
       link: "https://www.youtube.com/watch?v=HIXeE9hrbXM",
@@ -110,7 +123,7 @@ function App() {
       key: NaN,
       smallThumbnail: MFTHUMB400,
       largeThumbnail: MFTHUMB800,
-      alt: 3,
+      alt: 7,
       title: "Mould Fund - Bonsai Trees in Lines (Session)",
       info: "EMBRACE THE SOFT ROT!	First live session for Brighton-based Mould Fund, recorded on location in Forest Glen, with visuals from 1L1T.",
       link: "https://www.youtube.com/watch?v=VavNSyDj_1U",
@@ -120,7 +133,7 @@ function App() {
       key: NaN,
       smallThumbnail: homesickSteveThumb400,
       largeThumbnail: homesickSteveThumb800,
-      alt: 4,
+      alt: 8,
       title: "Alastair Gordon - Homesick Steve (Session)",
       info: "Alaistair Gordon's boozy, bluesy live session, recorded on location at Mouse Room Studio, Sheffield",
       link: "https://www.youtube.com/watch?v=yZYtYTvxcoc",
