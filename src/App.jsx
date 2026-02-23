@@ -100,16 +100,7 @@ function App() {
       link: "https://www.youtube.com/watch?v=RNHRqRbDu20",
       embedLink: "https://www.youtube.com/embed/RNHRqRbDu20?&autoplay=1",
     },
-    {
-      key: NaN,
-      smallThumbnail: SS400,
-      largeThumbnail: SS800,
-      alt: 5,
-      title: "Georgie Moon: Sandwich Sessions",
-      info: "Brighton based vocalist Georgie Moon serves up a delicious musical snack in the first ever installment of Sandwich Sessions for Bella Union records.",
-      link: "https://www.youtube.com/watch?v=jA5dyxoiKrM",
-      embedLink: "https://www.youtube.com/embed/jA5dyxoiKrM?&autoplay=1",
-    },
+  
     {
       key: NaN,
       smallThumbnail: curtainThumb400,
