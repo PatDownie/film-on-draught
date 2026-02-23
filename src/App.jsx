@@ -71,7 +71,7 @@ function App() {
       largeThumbnail: BBCThumb800,
       alt: 1,
       title: "Dear the BBC",
-      info: "Dear the BBC is an independantly produced zero budget surrealist comedy about a man who writes a letter of complaint to the BBC",
+      info: "Dear the BBC is an independently produced zero budget surrealist comedy about a man who writes a letter of complaint to the BBC",
       link: "https://www.youtube.com/watch?v=AdV4g3KCMhs",
       embedLink: "https://www.youtube.com/embed/AdV4g3KCMhs?&autoplay=1",
     },
