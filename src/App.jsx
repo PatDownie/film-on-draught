@@ -40,6 +40,10 @@ import mouldFund400 from "./images/mouldFund400.jpg";
 import mouldFund800 from "./images/mouldFund800.jpg";
 import resignation400 from "./images/received_1676940673089560.jpeg";
 import resignation800 from "./images/received_1940546103038423.jpeg";
+import HatHairThumb400 from "./images/HatHairThumb400.jpg";
+import HatHairThumb800 from "./images/HatHairThumb800.jpg";
+import BBCThumb400 from "./images/BBCThumb400.jpg";
+import BBCThumb800 from "./images/BBCThumb800.jpg";
 
 function App() {
   const [modalVisibility, setModalVisibility] = useState(false);
@@ -63,8 +67,8 @@ function App() {
    
     {
       key: NaN,
-      smallThumbnail: macintoshThumb400,
-      largeThumbnail: macintoshThumb800,
+      smallThumbnail: BBCThumb400,
+      largeThumbnail: BBCThumb800,
       alt: 1,
       title: "Dear the BBC",
       info: "Dear the BBC is an independantly produced zero budget surrealist comedy about a man who writes a letter of complaint to the BBC",
@@ -73,8 +77,8 @@ function App() {
     },
     {
       key: NaN,
-      smallThumbnail: macintoshThumb400,
-      largeThumbnail: macintoshThumb800,
+      smallThumbnail: HatHairThumb400,
+      largeThumbnail: HatHairThumb800,
       alt: 2,
       title: "YOU ARE HAVING A STRANGE DREAM ABOUT A MAN WHOSE HAIR IS A HAT",
       info: "It's ok for things to be sad",
